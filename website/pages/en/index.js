@@ -175,14 +175,24 @@ class Index extends React.Component {
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="light">
         {[
           {
             content:
-              'Blah',
+            "<ul>\
+              <li>Settings Manager section in Unity Project Settings window</li>\
+              <li>Optional support for multiple settings modules (break up your settings into independently managed categories)</li>\
+              <li> Event driven two way UI binding (use the built in input binders, extend them to support custom inputs, or even write your own UI code from scratch by subscribing to the settings events)</li>\
+              <li>Supports string, float, int, bool, and even resolutions</li>\
+              <li>Supports built in preferences like screen resolution, fullscreen mode and quality level</li>\
+              <li>Validation, modification and default tracking (allow easy implementation of discarding changes, restoring defaults, etc)</li>\
+              <li>OnSave events allow you to execute custom code when a setting is changed</li>\
+              <li>Requires Unity 2018.3+</li>\
+              <li>More to come!</li>\
+            </ul>",
             image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Features'
           },
         ]}
       </Block>
