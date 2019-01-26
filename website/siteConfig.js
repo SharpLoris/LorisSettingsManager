@@ -22,7 +22,7 @@
 
 const siteConfig = {
   title: 'Loris Settings Manager', // Title for your website.
-  tagline: 'Documentation',
+  // tagline: 'Documentation',
   url: 'https://sharploris.github.io', // Your website URL
   baseUrl: '/LorisSettingsManager/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -42,6 +42,7 @@ const siteConfig = {
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
+    {feedback: 'feedback', label: 'Feedback'}
   ],
 
   // If you have users set above, you add it here:
