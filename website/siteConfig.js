@@ -51,7 +51,7 @@ const siteConfig = {
   /* path to images for header/footer */
   headerIcon: 'img/LorisLogo.png',
   footerIcon: '',
-  favicon: 'img/favicon/favicon.ico',
+  favicon: 'img/favicon/favicon-32x32.png',
 
   /* Colors for website */
   colors: {
