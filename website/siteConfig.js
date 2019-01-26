@@ -22,7 +22,7 @@
 
 const siteConfig = {
   title: 'Loris Settings Manager', // Title for your website.
-  tagline: 'Documentation',
+   tagline: 'Documentation',
   url: 'https://sharploris.github.io', // Your website URL
   baseUrl: '/LorisSettingsManager/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -42,20 +42,21 @@ const siteConfig = {
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
+    {page: 'feedback', label: 'Feedback'}
   ],
 
   // If you have users set above, you add it here:
   //users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/lorisLogo.png',
+  footerIcon: '',
+  favicon: 'img/favicon/favicon.ico',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#4285F4',
+    secondaryColor: '#20445c',
   },
 
   /* Custom fonts for website */
