@@ -3,9 +3,9 @@
 #
 aliases:
  - &filter-only-master
-   branches:
-     only:
-       - master
+    branches:
+      only:
+        - master
 
 version: 2
 jobs:
@@ -20,7 +20,7 @@ jobs:
           name: Deploying to GitHub Pages
           command: |
             git config --global user.email "Danielw093@users.noreply.github.com"
-            git config --global user.name "Danielw093"
+            git config --global user.name "Daniel Williams"
             echo "machine github.com login Danielw093 password $GITHUB_TOKEN" > ~/.netrc
             cd website && yarn install && GIT_USER=Danielw093 yarn run publish-gh-pages
 
@@ -29,4 +29,4 @@ workflows:
   build_and_deploy:
     jobs:
       - deploy-website:
-        filters: *filter-only-master
+          filters: *filter-only-master
