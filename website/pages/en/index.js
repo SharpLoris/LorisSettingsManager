@@ -96,7 +96,7 @@ class Index extends React.Component {
       <Block layout="threeColumn" align="center">
         {[
           {
-            content: "Configure what settings your game has directly from the Unity Editor. No need to write any code to manage user configurable settings, simply go to Project Settings and set them up. We'll take care of the rest.",
+            content: "Configure what settings your game has directly from the <a href='https://unity3d.com/'>Unity</a> Editor. No need to write any code to manage user configurable settings, simply go to Project Settings and set them up. We'll take care of the rest.",
             image: `${baseUrl}img/cog.png`,
             imageAlign: 'top',
             title: 'Manage your Game Settings',
@@ -130,7 +130,7 @@ class Index extends React.Component {
       <Block background="light">
         {[
           {
-            content: '<p>The Loris Settings Manager is a Unity3D extension for configuring and accessing game settings.\
+            content: '<p>The Loris Settings Manager is a <a href="https://unity3d.com/">Unity3D</a> extension for configuring and accessing game settings.\
             It is intended to facilitate the setup of all of the settings that might be user configurable, provide a code interface\
             for accessing their values, as well as providing a simple way to build the in-game menus to modify them.</p>\
             <p>It should allow you to very easily keep track of and manage what Game Settings you have in your project in much the same\
