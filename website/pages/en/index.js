@@ -60,13 +60,13 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/LorisLogoNoText.png`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            {/* <Button href="#try">Try It Out</Button> */}
+            <Button href={docUrl('doc1.html')}>Get Started</Button>
+            <Button href={`${baseUrl}feedback`}>Provide Feedback</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -85,76 +85,114 @@ class Index extends React.Component {
         id={props.id}
         background={props.background}>
         <GridBlock
-          align="center"
+          align={props.align}
           contents={props.children}
           layout={props.layout}
         />
       </Container>
     );
 
-    const FeatureCallout = () => (
-      <div
-        className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
-      </div>
-    );
-
-    const TryOut = () => (
-      <Block id="try">
+    const Features = () => (
+      <Block layout="threeColumn" align="center">
         {[
           {
-            content: 'Talk about trying this out',
+            content: "Configure what settings your game has directly from the <a href='https://unity3d.com/'>Unity</a> Editor. No need to write any code to manage user configurable settings, simply go to Project Settings and set them up. We'll take care of the rest.",
+            image: `${baseUrl}img/cog.png`,
+            imageAlign: 'top',
+            title: 'Manage your Game Settings',
+          },
+          {
+            content: 'Quickly build in-game settings menus without writing a single line of code. Just use the provided components to configure two way bindings between your UI inputs and your settings.',
+            image: `${baseUrl}img/input.png`,
+            imageAlign: 'top',
+            title: 'Create Reactive Menus',
+          },
+          {
+            content: "Using custom inputs? Write your own extensions to configure two way binding with anything you like! Less than a couple of minutes is all it should take to integrate a new input, whether you got it from the asset store or made it yourself.",
+            image: `${baseUrl}img/CSharp.png`,
+            imageAlign: 'top',
+            title: 'Write Extensions',
+          }
+        ]}
+      </Block>
+    );
+
+    // const FeatureCallout = () => (
+    //   <div
+    //     className="productShowcaseSection paddingBottom"
+    //     style={{textAlign: 'center'}}>
+    //     <h2>More Info</h2>
+    //     <MarkdownBlock>Test</MarkdownBlock>
+    //   </div>
+    // );
+
+    const TellMeAboutIt = () => (
+      <Block background="light">
+        {[
+          {
+            content: '<p>The Loris Settings Manager is a <a href="https://unity3d.com/">Unity3D</a> extension for configuring and accessing game settings.\
+            It is intended to facilitate the setup of all of the settings that might be user configurable, provide a code interface\
+            for accessing their values, as well as providing a simple way to build the in-game menus to modify them.</p>\
+            <p>It should allow you to very easily keep track of and manage what Game Settings you have in your project in much the same\
+            way as the Unity Input Manager allows you to manage your controls. Equally, you should be able to build a working settings\
+            menu in just a few minutes, or even hand it off to UI designer with no coding knowledge. You can ditch the Unity launcher window \
+            and add a bit of polish to your game with very little time investment!</p>',
+            image: `${baseUrl}img/docusaurus.svg`,
+            imageAlign: 'right',
+            title: 'Tell me about it',
+          },
+        ]}
+      </Block>
+    );
+
+    const Explanation = () => (
+      <Block id="explanation">
+        {[
+          {
+            content: 
+            "<p>\
+              A little while ago I was working on a personal project, and I started building an in-game settings menu.\
+              Often Unity games ship with only the default launcher window; but if you want your game to have custom settings\
+              or to be able to change resolution without restarting, then you need to build your own. I spent a while on this,\
+              and I realised that Unity doesn't provide much out of the box. It gives you the\
+              <a href='https://docs.unity3d.com/ScriptReference/PlayerPrefs.html'>PlayerPrefs</a>\
+              class to save these custom key values to the disk, and not much else.\
+            </p>\
+            <p>\
+              I thought it would be useful to have more functionality available directly in the editor for this, so I started with the\
+              intention of making a wrapper around EditorPrefs that allows the developer to configure their settings from the editor. \
+              From there I started streamlining the process of building UI's by creating functionality to support event driven two way bindings\
+              with the settings values, as well as built in validity tracking, and several other things like that. I have tried to build it with two\
+              philosophies in mind: allowing settings to be configured and menus built that control them by someone with no coding knowledge, and making\
+              it very simple to code two way bindings with any custom inputs.'\
+            </p>",
             image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'left',
-            title: 'Try it Out',
+            title: 'Why did you make this?',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
-      <Block background="dark">
-        {[
-          {
-            content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'right',
-            title: 'Description',
-          },
-        ]}
-      </Block>
-    );
-
-    const LearnHow = () => (
       <Block background="light">
         {[
           {
-            content: 'Talk about learning how to use this',
+            content:
+            "<ul>\
+              <li>Settings Manager section in Unity Project Settings window</li>\
+              <li>Optional support for multiple settings modules (break up your settings into independently managed categories)</li>\
+              <li> Event driven two way UI binding (use the built in input binders, extend them to support custom inputs, or even write your own UI code from scratch by subscribing to the settings events)</li>\
+              <li>Supports string, float, int, bool, and even resolutions</li>\
+              <li>Supports built in preferences like screen resolution, fullscreen mode and quality level</li>\
+              <li>Validation, modification and default tracking (allow easy implementation of discarding changes, restoring defaults, etc)</li>\
+              <li>OnSave events allow you to execute custom code when a setting is changed</li>\
+              <li>Requires Unity 2018.3+</li>\
+              <li>More to come!</li>\
+            </ul>",
             image: `${baseUrl}img/docusaurus.svg`,
             imageAlign: 'right',
-            title: 'Learn How',
-          },
-        ]}
-      </Block>
-    );
-
-    const Features = () => (
-      <Block layout="fourColumn">
-        {[
-          {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
-          },
-          {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/docusaurus.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Features'
           },
         ]}
       </Block>
@@ -192,13 +230,14 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
+        {/* <div className="mainContainer"> */}
+        <div>
           <Features />
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
+          {/* <FeatureCallout /> */}
+          <TellMeAboutIt />
+          <Explanation />
           <Description />
-          <Showcase />
+          {/* <Showcase /> */}
         </div>
       </div>
     );
