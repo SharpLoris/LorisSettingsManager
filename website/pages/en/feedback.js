@@ -17,7 +17,7 @@ function Feedback(props) {
       <Container className="mainContainer documentContainer postContainer">
         <div className="center">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScD2trUt40w0XZ8hIIWrOH4bOCuSdvZvZjgdQ-Lm_gCfuHUeg/viewform?embedded=true" 
-          width="640" height="756" frameborder="0" marginheight="0" marginwidth="0">Loading...
+          width="640" height="756" frameBorder="0" marginHeight="0" marginWidth="0">Loading...
           </iframe>
         </div>
       </Container>
