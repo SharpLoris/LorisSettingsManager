@@ -22,7 +22,7 @@
 
 const siteConfig = {
   title: 'Loris Settings Manager', // Title for your website.
-   tagline: 'Documentation',
+   tagline: 'Intuitive settings management for Unity3D',
   url: 'https://sharploris.github.io', // Your website URL
   baseUrl: '/LorisSettingsManager/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
