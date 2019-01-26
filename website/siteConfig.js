@@ -49,7 +49,7 @@ const siteConfig = {
   //users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/lorisLogo.png',
+  headerIcon: 'img/LorisLogo.png',
   footerIcon: '',
   favicon: 'img/favicon/favicon.ico',
 
