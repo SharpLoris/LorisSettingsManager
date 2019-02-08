@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["doc1"],
+    "Getting Started": ["the-basics", "core-concepts"],
     "Guides": ["doc2"],
     "API": ["doc3", "doc4", "doc5"]
   },

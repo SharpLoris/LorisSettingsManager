@@ -27,7 +27,7 @@ function Help(props) {
       title: 'Video Tutorials',
     },
     {
-      content: `Learn more using the [documentation on this site.](${docUrl('doc1.html')})\
+      content: `Learn more using the [documentation on this site.](${docUrl('the-basics.html')})\
        The documentation should provide a comprehensive overview of every feature, but if\
         anything appears to be missing please let us know.`,
       title: 'Browse Docs',
