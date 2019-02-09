@@ -9,7 +9,7 @@ This guide will run through everything you need to know to get started using Lor
 - Create a settings menu to control that setting
 
 ##  Installing 
-If you haven't already, you will need to add the Loris Settings Manager to your Unity Project by downloading it from the [Asset Store](https://assetstore.unity.com/). Make sure you import the entire package into your project and not just a couple of files.
+If you haven't already, you will need to add the Loris Settings Manager to your Unity Project by downloading it from the [Asset Store](http://u3d.as/1s7A). Make sure you import the entire package into your project and not just a couple of files.
 
 ## Configure Settings
 To begin configuring your game settings, you will need to go to `Edit -> Project Settings` in the Unity Editor and open up the **Settings Manager** header. There you will see two subheaders; **Game Settings** and **Modules**.
