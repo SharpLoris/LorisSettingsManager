@@ -18,7 +18,7 @@ To begin configuring your game settings, you will need to go to `Edit -> Project
 
 **Modules** are optional and can be used to create multiple separate settings menus, such as Video Settings and Audio Settings. 
 
-**Game Settings** is where you set up the settings that will be available. Open it up and click the **Add Setting** button to create your first custom setting. 
+**Game Settings** is where you setup the settings that will be available. Open it up and click the **Add Setting** button to create your first custom setting. 
 
 Configure your new setting as below:
 
@@ -57,7 +57,7 @@ To create a settings menu, you will first need to add a menu manager to your Uni
 Next you will need to create your inputs:
 
  1. Create two inputs in your scene; a `Slider` and an `Input Field`
- 2. Select your newly created `Slider` and add a `SliderBinder`component. In the inspector, select **Int** for the **Value Type** and **Master Volume** for the **Bound Setting**
+ 2. Select your newly created `Slider` and add a `SliderBinder` component. In the inspector, select **Int** for the **Value Type** and **Master Volume** for the **Bound Setting**
  3. Select the previously created `Input Field` and add an `InputFieldBinder` component. Configure the inspector the same way you did for the slider.
 
 If you run the scene now, you should find that when you adjust the slider, the contents of the text box change, and vice versa!
@@ -68,7 +68,7 @@ To finish, we want to add some basic menu functionality - the ability to save ch
 
  1. Create three buttons
  2. Add a `SaveChangesButton` component, `DiscardChangesButton` component and `RestoreDefaultsButton` component to each of the buttons respectively
- 3. For each of the components, make sure to add the`SettingsMenuManager` component from your scene to their configuration in the inspector
+ 3. For each of the components, make sure to add the `SettingsMenuManager` component from your scene to their configuration in the inspector
 
 If you run the scene now, you should have three buttons that allow you to control your menu. The **Save Changes Button** will be disabled when nothing is modified or the settings are invalid, the **Discard Changes Button** will be disabled when nothing is modified and the **Restore Defaults Button** will be disabled when all settings match their default values.
 
