@@ -62,7 +62,7 @@
 <p>To begin configuring your game settings, you will need to go to <code>Edit -&gt; Project Settings</code> in the Unity Editor and open up the <strong>Settings Manager</strong> header. There you will see two subheaders; <strong>Game Settings</strong> and <strong>Modules</strong>.</p>
 <p><img src="/LorisSettingsManager/docs/assets/the-basics/project-settings.jpg" alt="alt-text"></p>
 <p><strong>Modules</strong> are optional and can be used to create multiple separate settings menus, such as Video Settings and Audio Settings.</p>
-<p><strong>Game Settings</strong> is where you set up the settings that will be available. Open it up and click the <strong>Add Setting</strong> button to create your first custom setting.</p>
+<p><strong>Game Settings</strong> is where you setup the settings that will be available. Open it up and click the <strong>Add Setting</strong> button to create your first custom setting.</p>
 <p>Configure your new setting as below:</p>
 <p><img src="/LorisSettingsManager/docs/assets/the-basics/master-volume.jpg" alt="alt-text"></p>
 <h2><a class="anchor" aria-hidden="true" id="accessing-settings"></a><a href="#accessing-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Accessing Settings</h2>
@@ -94,7 +94,7 @@ private void SetVolume(int? value)
 <p>Next you will need to create your inputs:</p>
 <ol>
 <li>Create two inputs in your scene; a <code>Slider</code> and an <code>Input Field</code></li>
-<li>Select your newly created <code>Slider</code> and add a <code>SliderBinder</code>component. In the inspector, select <strong>Int</strong> for the <strong>Value Type</strong> and <strong>Master Volume</strong> for the <strong>Bound Setting</strong></li>
+<li>Select your newly created <code>Slider</code> and add a <code>SliderBinder</code> component. In the inspector, select <strong>Int</strong> for the <strong>Value Type</strong> and <strong>Master Volume</strong> for the <strong>Bound Setting</strong></li>
 <li>Select the previously created <code>Input Field</code> and add an <code>InputFieldBinder</code> component. Configure the inspector the same way you did for the slider.</li>
 </ol>
 <p>If you run the scene now, you should find that when you adjust the slider, the contents of the text box change, and vice versa!</p>
@@ -103,7 +103,7 @@ private void SetVolume(int? value)
 <ol>
 <li>Create three buttons</li>
 <li>Add a <code>SaveChangesButton</code> component, <code>DiscardChangesButton</code> component and <code>RestoreDefaultsButton</code> component to each of the buttons respectively</li>
-<li>For each of the components, make sure to add the<code>SettingsMenuManager</code> component from your scene to their configuration in the inspector</li>
+<li>For each of the components, make sure to add the <code>SettingsMenuManager</code> component from your scene to their configuration in the inspector</li>
 </ol>
 <p>If you run the scene now, you should have three buttons that allow you to control your menu. The <strong>Save Changes Button</strong> will be disabled when nothing is modified or the settings are invalid, the <strong>Discard Changes Button</strong> will be disabled when nothing is modified and the <strong>Restore Defaults Button</strong> will be disabled when all settings match their default values.</p>
 <p><img src="/LorisSettingsManager/docs/assets/the-basics/volume-slider-with-buttons.gif" alt="alt-text"></p>
