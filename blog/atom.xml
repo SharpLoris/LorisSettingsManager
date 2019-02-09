@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://sharploris.github.io/LorisSettingsManager/blog</id>
+    <title>Loris Settings Manager Blog</title>
+    <updated>2019-02-09T06:00:00Z</updated>
+    <generator>Feed for Node.js</generator>
+    <link rel="alternate" href="https://sharploris.github.io/LorisSettingsManager/blog"/>
+    <subtitle>The best place to stay up-to-date with the latest Loris Settings Manager news and events.</subtitle>
+    <logo>https://sharploris.github.io/LorisSettingsManager/img/LorisLogo.png</logo>
+    <rights>Copyright © 2019 Sharp Loris Games</rights>
+    <entry>
+        <title type="html"><![CDATA[Preparing to Release]]></title>
+        <id>https://sharploris.github.io/LorisSettingsManager/blog/2019/02/09/preparing-to-release.html</id>
+        <link href="https://sharploris.github.io/LorisSettingsManager/blog/2019/02/09/preparing-to-release.html">
+        </link>
+        <updated>2019-02-09T06:00:00Z</updated>
+        <summary type="html"><![CDATA[<p>Hi there! Welcome to the first ever blog post about my Settings Manager. I've been working on this project for around six months now, and after spending quite some time grappling with feature creep and perfectionism, I've finally got to a place where I believe I have a minimum viable product. Now don't get me wrong, there's a ton of things I'm not quite happy with, things I'd like to improve or change, features I'd like to add or flesh out - but I believe that what I have now is enough to be really useful. I think it's pretty cool, and I figured I'd just take this opportunity to talk a little bit more about the project, how it came about, and the upcoming release.</p>
+]]></summary>
+        <author>
+            <name>Daniel Williams</name>
+            <uri>https://twitter.com/DanielW094</uri>
+        </author>
+    </entry>
+</feed>
