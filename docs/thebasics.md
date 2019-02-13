@@ -8,6 +8,8 @@ This guide will run through everything you need to know to get started using Lor
 - Use that setting in your code
 - Create a settings menu to control that setting
 
+You can also find a [video here](http://www.youtube.com/watch?v=rBYJuimt7DQ) covering all of the same ground if you'd prefer.
+
 ##  Installing 
 If you haven't already, you will need to add the Loris Settings Manager to your Unity Project by downloading it from the [Asset Store](http://u3d.as/1s7A). Make sure you import the entire package into your project and not just a couple of files.
 

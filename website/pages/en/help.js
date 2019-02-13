@@ -23,7 +23,7 @@ function Help(props) {
   const supportLinks = [
     {
       content: "Watch video tutorials on working with the Loris Settings Manager\
-       over at our [YouTube]() channel. Feel free to suggest guides if you can't find what you're looking for!",
+       over at our [YouTube](https://www.youtube.com/playlist?list=PL6Dum8Kzynon_dll5dvSG9-NaJUslxRHg) channel. Feel free to suggest guides if you can't find what you're looking for!",
       title: 'Video Tutorials',
     },
     {
