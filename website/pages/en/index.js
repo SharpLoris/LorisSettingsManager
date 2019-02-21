@@ -139,7 +139,7 @@ class Index extends React.Component {
             way as the Unity Input Manager allows you to manage your controls. Equally, you should be able to build a working settings\
             menu in just a few minutes, or even hand it off to UI designer with no coding knowledge. You can ditch the Unity launcher window \
             and add a bit of polish to your game with very little time investment!</p>',
-            image: `${baseUrl}img/editorScreenshot1.png`,
+            image: `${baseUrl}img/editor-screenshot1.png`,
             imageAlign: 'right',
             title: 'Tell me about it',
           },
@@ -192,7 +192,7 @@ class Index extends React.Component {
               <li>Requires Unity 2018.3+</li>\
               <li>More to come!</li>\
             </ul>",
-            image: `${baseUrl}img/editorScreenshot3.png`,
+            image: `${baseUrl}img/editor-screenshot3.png`,
             imageAlign: 'right',
             title: 'Features'
           },
