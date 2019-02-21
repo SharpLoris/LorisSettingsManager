@@ -4,7 +4,7 @@
         <title>Loris Settings Manager Blog</title>
         <link>https://sharploris.github.io/LorisSettingsManager/blog</link>
         <description>The best place to stay up-to-date with the latest Loris Settings Manager news and events.</description>
-        <lastBuildDate>Sat, 09 Feb 2019 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Feb 2019 06:00:00 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,14 @@
             <link>https://sharploris.github.io/LorisSettingsManager/blog</link>
         </image>
         <copyright>Copyright © 2019 Sharp Loris Games</copyright>
+        <item>
+            <title><![CDATA[Available Now!]]></title>
+            <link>https://sharploris.github.io/LorisSettingsManager/blog/2019/02/21/available-now.html</link>
+            <guid>https://sharploris.github.io/LorisSettingsManager/blog/2019/02/21/available-now.html</guid>
+            <pubDate>Thu, 21 Feb 2019 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>As of today, the Loris Settings Manager is approved and available on the <a href="https://assetstore.unity.com/packages/tools/utilities/loris-settings-manager-139326">Unity Asset Store</a>. I'm really glad to be able to share the last 6 months of work with my fellow developers, and I'm hoping that there are people out there who will find this useful. As I mentioned in my previous post, I have lots of improvements and additions that I'd like to make, but it's hard to be objective about their importance until other people have their hands on it, so hopefully I'll get lots of valuable feedback.</p>
+]]></description>
+        </item>
         <item>
             <title><![CDATA[Preparing to Release]]></title>
             <link>https://sharploris.github.io/LorisSettingsManager/blog/2019/02/09/preparing-to-release.html</link>
