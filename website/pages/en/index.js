@@ -117,14 +117,16 @@ class Index extends React.Component {
       </Block>
     );
 
-    // const FeatureCallout = () => (
-    //   <div
-    //     className="productShowcaseSection paddingBottom"
-    //     style={{textAlign: 'center'}}>
-    //     <h2>More Info</h2>
-    //     <MarkdownBlock>Test</MarkdownBlock>
-    //   </div>
-    // );
+    const FeatureCallout = () => (
+      <div
+        className="productShowcaseSection paddingBottom"
+        style={{textAlign: 'center'}}>
+        <h2>Demo Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rBYJuimt7DQ" 
+        frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
+        </iframe>
+      </div>
+    );
 
     const TellMeAboutIt = () => (
       <Block background="light">
@@ -137,7 +139,7 @@ class Index extends React.Component {
             way as the Unity Input Manager allows you to manage your controls. Equally, you should be able to build a working settings\
             menu in just a few minutes, or even hand it off to UI designer with no coding knowledge. You can ditch the Unity launcher window \
             and add a bit of polish to your game with very little time investment!</p>',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/editorScreenshot1.png`,
             imageAlign: 'right',
             title: 'Tell me about it',
           },
@@ -166,7 +168,7 @@ class Index extends React.Component {
               philosophies in mind: allowing settings to be configured and menus built that control them by someone with no coding knowledge, and making\
               it very simple to code two way bindings with any custom inputs.'\
             </p>",
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/volume-menu.gif`,
             imageAlign: 'left',
             title: 'Why did you make this?',
           },
@@ -190,7 +192,7 @@ class Index extends React.Component {
               <li>Requires Unity 2018.3+</li>\
               <li>More to come!</li>\
             </ul>",
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/editorScreenshot3.png`,
             imageAlign: 'right',
             title: 'Features'
           },
@@ -233,7 +235,7 @@ class Index extends React.Component {
         {/* <div className="mainContainer"> */}
         <div>
           <Features />
-          {/* <FeatureCallout /> */}
+          <FeatureCallout />
           <TellMeAboutIt />
           <Explanation />
           <Description />
